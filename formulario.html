@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica de HTML5</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Contacto</h1>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="formulario.html">Formulario</a>
+  </nav>
+  <h2>Formulario</h2>
+  <form>
+    <label>Nombre: <input id="nombre" name="nombre" type="text" placeholder="Introduce tu nombre" required></label><br>
+    <label>Correo: <input id="correo" name="correo" type="email" placeholder="Introduce tu correo" required></label><br>
+    <fieldset>
+      <legend>Genero:</legend>
+      <label><input id="masculino" type="radio" name="genero" value="masculino">Masculino</label>
+      <label><input id="femenino" type="radio" name="genero" value="femenino">Femenino</label>
+    </fieldset>
+    <label>Contraseña: <input id="password" name="password" type="password" placeholder="Introduce tu contraseña"
+        required></label><br>
+    <label>Comentario:</label><br>
+    <textarea placeholder="Introduce tu comentario..."></textarea><br>
+    <fieldset>
+      <legend>Ciudad:</legend>
+      <select name="ciudad" required>
+        <option value="Guadalajara" selected>Guadalajara</option>
+        <option value="Zapopan">Zapopan</option>
+        <option value="Tonalá">Tonalá</option>
+        <option value="Otra">Otra</option>
+      </select>
+    </fieldset>
+    <label><input id="contratar" type="checkbox" name="contratar" value="contratar"> Me interesa contratarte</label><br>
+    <button type="submit" class="submit">Submit</button>
+  </form>
+</body>
+
+</html>
